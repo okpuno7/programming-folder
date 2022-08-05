@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+    
+    <div id="box" style="color:rgb(20, 18, 18);font-size:30px;background-color: rgb(15, 137, 74);"></div>
+
+    Username <br> <input type="text" placeholder="Enter your username here" id="mytext1"> <br> <br>
+
+    Email <br> <input type="email" placeholder="Enter your email here" id="mytext2"> <br> <br>
+
+    Phone Number <br> <input type="number" placeholder="Enter your phone number here" id="mytext3">  <br> <br>
+
+    Password <br> <input type="password" placeholder="Enter your password here" id="mytext4">  <br> <br>
+
+    Confirm Password <br> <input type="password" placeholder="Enter your confirm password here" id="mytext5"> <input type="button" id="mybutton5" value="Check"> 
+    
+       <script>
+
+           let btn1 = document.getElementById('mybutton5');
+
+            btn1.onclick = function(){
+            let username = document.getElementById('mytext1').value;
+          
+
+
+             let box = document.getElementById('box');
+
+            box.innerHTML = username;
+             if(mytext1.value.length >8){
+                 box.innerHTML = username
+             }else{box.innerHTML = "Error"}
+
+             alert(text)
+            }
+
+             
+              let btn2 = document.getElementById('mybutton5');
+
+            btn2.onclick = function(){
+            let email = document.getElementById('mytext2').value;
+          
+
+
+           let box = document.getElementById('box');
+
+              box.innerHTML = email;
+          if(mytext2.value.length >8){
+                   box.innerHTML = email
+             }else{box.innerHTML = "Error"}
+
+              alert(text)
+             }
+
+
+
+             
+               let btn3 = document.getElementById('mybutton5');
+
+              btn3.onclick = function(){
+              let email = document.getElementById('mytext3').value;
+          
+
+
+               let box = document.getElementById('box');
+
+               box.innerHTML = email;
+               if(mytext3.value.length >8){
+                   box.innerHTML = email
+              }else{box.innerHTML = "Error"}
+
+               alert(text)
+              }
+
+
+              let btn4 = document.getElementById('mybutton5');
+             
+             
+        
+
+             btn4.onclick = function(){
+             let password = document.getElementById('mytext4').value;
+             
+             let confirm_password = document.getElementById('mytext5').value;
+
+
+            let box = document.getElementById('box');
+
+
+
+              box.innerHTML = password;
+               if(mytext4.value === mytext5.value){
+                box.innerHTML = password
+              }else{box.innerHTML = "Error"}
+               
+               alert(text)
+              } 
+
+
+         
+
+           
+//        </script>
+// </body>
+// </html>

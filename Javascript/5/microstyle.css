@@ -1,0 +1,14 @@
+#container{
+    height: 800px;
+    width: 800px;
+}
+
+#a{
+     margin-left: 60px;
+     padding-top: 15px;
+}
+
+#container , #mytext{
+    width:800px ;
+    height: 50px;
+}

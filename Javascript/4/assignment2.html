@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2
+    </title>
+</head>
+<body>
+
+    <div id="box" style="color:rgb(20, 18, 18);font-size:30px;background-color: rgb(15, 137, 74);"></div>
+    <input type="number" placeholder="Enter your text here" id="mytext1"><br>
+
+    <input type="button" id="mybutton" value="Show Text">
+
+
+       <script>
+     
+          let btn = document.getElementById('mybutton');
+
+          btn.onclick = function(){
+          let range = document.getElementById('mytext1').value;
+
+          let box = document.getElementById('box');
+
+          box.innerHTML = range;
+
+
+                if(range >= 0 && range <=44){
+                   box.innerHTML = "F";}else if(range > 44 && range <=49){
+                   box.innerHTML = "D";}else if(range >49 && range <= 59){
+                   box.innerHTML = "C";}else if(range >59 && range <= 79){
+                   box.innerHTML = "B"; } else if(range >79 && range <= 100){
+                   box.innerHTML = "A"; } 
+                 alert(text);
+            }
+           
+       </script>
+    
+</body>
+
+
+</html>

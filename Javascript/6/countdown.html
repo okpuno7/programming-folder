@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+</head>
+<body>
+
+
+                <div id="screen"></div>
+
+                <script>
+                        let start = 90;
+                        let number_of_seconds = start * 60;
+                        let screen = document.getElementById('screen');
+
+                        setInterval(countDown,1000);
+
+
+                        function countDown(){
+                            
+                            let minute = Math.floor(number_of_seconds/60);
+                            let seconds = number_of_seconds % 60;
+
+                          
+                            if(minute == 0 && seconds == 0){
+                                screen.innerHTML = "00:00";
+                            }else{
+                                number_of_seconds--;
+                                 screen.innerHTML = minute + ":" + seconds;
+                            }
+                        }
+
+
+
+
+                </script>
+    
+</body>
+</html>

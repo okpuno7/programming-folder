@@ -1,0 +1,35 @@
+nav{
+    text-align: center;
+}
+
+li ,a{
+    text-decoration: none;
+    /* display: inline;    */
+    
+}
+
+ul, a{
+    word-spacing: 20px;
+}
+.nav-head ,.nav-toggle{
+    margin-left: 1000px;
+}
+.links{
+    height: auto; 
+    overflow: hidden;
+    transition: var(--transition);
+    height: 0;
+    
+}
+.show-links{
+    height: 10rem;
+    
+}
+a{
+ text-decoration: none;
+}
+ul , a{
+    text-decoration: none;
+    display:inline-block ;
+}
+ 

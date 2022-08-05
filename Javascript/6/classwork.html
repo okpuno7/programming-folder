@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type = "number" id = "message">
+    <input type="button" value="check" id="real"> -->
+    
+    <div id= "screen" style = "color:red"></div>
+
+    <script>
+
+        // let  btn1 = document.getElementById("real")
+
+        // btn1.onclick = function(){
+        //     let message  = document.getElementById("message").value;
+        //     let screen = document.getElementById("screen");
+        //     screen.innerHTML =  "Month: "+  message * 12 + "<br>" + "Weeks: " + message * 52;
+        // }
+         
+        let begin = 1;
+        let number_seconds = begin * 60
+        let display = document.getElementById("screen")
+
+        setInterval(countDown,10)
+
+        function countDown(){
+            let minute = Math.floor(number_seconds/60);
+            let seconds = number_seconds % 60;
+
+            if(minute ==00 && seconds ==00){
+                display.innerHTML = "00:00" ;
+            } else{  
+                number_seconds--;
+                if(seconds == 0){
+                    display.innerHTML = minute + ": 0" + seconds;
+                }else{
+                    display.innerHTML = minute + ":" + seconds;
+                }
+            }
+        }
+            
+    </script>
+
+</body>
+</html>

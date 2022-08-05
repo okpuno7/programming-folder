@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+</head>
+<body>
+
+    <div id="box" style="color:rgb(20, 18, 18);font-size:30px;background-color: rgb(15, 137, 74);"></div>
+    <input type="number" placeholder="Enter your text here" id="mytext1"><br>
+
+    <input type="button" id="mybutton" value="Show Text"> -->
+
+
+    <script>
+     
+        let btn = document.getElementById('mybutton');
+
+        btn.onclick = function(){
+        let range = document.getElementById('mytext1').value;
+
+        let box = document.getElementById('box');
+
+        box.innerHTML = range;
+
+
+             if(range > 0 && range <=10){
+                box.innerHTML = "Children";
+             }else if(range > 10 && range <=19){
+                 box.innerHTML = "Teens";
+             }else if(range >19 && range <= 40){
+                box.innerHTML = "Youth";
+             }else if(range >40 && range <= 50){
+                box.innerHTML = "Parent"; } else if(range >50 && range <= 65){
+                box.innerHTML = "Adult"; } else if(range >65 && range <= 80){
+                box.innerHTML = "Aged"; } else if(range >80 && range <= 100){
+                box.innerHTML = "Very Aged"; } else if(range >100 && range <= 969){
+                box.innerHTML = "Very Old"; }  else {
+                box.innerHTML = "You must be a Spirit"; }
+            alert(text);
+         }
+
+    </script>
+    
+</body>
+</html>

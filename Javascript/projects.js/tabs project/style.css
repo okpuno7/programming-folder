@@ -1,0 +1,36 @@
+.title{
+    text-align: center;
+}
+img{
+    height: 400px;
+    width: 400px;
+}
+.about-content p{
+    max-width: 500px;
+}
+.about-center{
+    display: flex;
+}
+.about , .btn-container{
+    margin-left: 100px;
+}
+
+.tab-btn:hover:not(.active){
+    background: var(--clr-primary-10);
+    color: var(--clr-primary-5);
+}
+.about-content{
+    border-bottom-left-radius: var(--radis);
+    border-bottom-right-radius: var(--radis);
+    padding: 2rem 1.5rem;
+}
+
+.content{
+    display: none;
+}
+.tab-btn .active{
+    background: blue;
+}
+.content .active {
+    display: block;
+}

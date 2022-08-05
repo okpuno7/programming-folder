@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 4</title>
+</head>
+<body>
+    
+
+    <div id="box" style="color:rgb(20, 18, 18);font-size:30px;background-color: rgb(15, 137, 74);"></div>
+    <input type="number" placeholder="Enter your text here" id="mytext1"><br>
+    <span id="validateTextOne"></span>
+    <!-- <input type="number" placeholder="Enter your text here" id="mytext2">
+
+    <input type="button" id="mybutton" value="Show Text"> -->
+
+    <!-- <div id="screen"></div> -->
+
+
+
+    <script>
+
+        // let btn = document.getElementById('mybutton');
+
+        // btn.onclick = function(){
+        //     let text = document.getElementById('mytext').value;
+
+        //     let box = document.getElementById('box');
+
+        //     // box.innerHTML = text;
+
+
+        //     if(text > 0 && text <=10){
+        //         box.innerHTML = "Your number is between 1 and 10";
+        //     }else if(text > 10 && text < 50){
+        //         box.innerHTML = "Your number is from 11 to 49";
+        //     }else if(text >=50 && text < 60){
+        //         box.innerHTML = "Your number is between 50 and 59";
+        //     }
+        //     // alert(text);
+        // }
+
+
+        // let btn = document.getElementById('mybutton');
+        // const pi = 3.142;
+
+
+
+        // btn.onclick = ()=>{
+        //     let radius = document.getElementById('mytext').value;
+        //     let box = document.getElementById('box');
+
+        //     box.innerHTML = pi * radius * radius;
+            
+        // }
+
+
+        // let btn = document.getElementById('mybutton');
+        // let box = document.getElementById('box');
+        
+
+        // function findAreaOfRectangle(L, B){
+            
+        //         box.innerHTML =  L * B;
+        // }
+
+        // btn.onclick = ()=>{
+        //     let number1 = document.getElementById('mytext1').value;
+
+        //     let number2 = document.getElementById('mytext2').value;
+
+        //     findAreaOfRectangle(number1,number2);
+        //     // findAreaOfCircle(pi,number);
+        //     // findAreaOfCircle(pi,number);
+        //     // findAreaOfCircle(pi,number);
+        //     // findAreaOfCircle(pi,number);
+        // }
+
+
+
+        let text1 = document.getElementById('mytext1');
+
+        text1.onblur = ()=>{
+                if(text1.value == ""){
+                   let validateTextOne = document.getElementById("validateTextOne");
+                  validateTextOne.innerHTML = "Field cannot be empty";
+                }else{
+                    validateTextOne.style.display ="none";
+                }
+        }
+
+
+
+
+
+
+
+
+
+       
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

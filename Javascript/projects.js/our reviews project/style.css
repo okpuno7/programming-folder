@@ -1,0 +1,21 @@
+img{
+    height: 70px;
+    width: 70px;
+    border-radius: 70px;
+    
+}
+.container{
+    text-align: center;
+}
+article{
+    background-color: blue;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    border-radius: inherit;
+    margin-left: 160px;
+}
+p , #info{
+    max-width: 400px;
+    
+}

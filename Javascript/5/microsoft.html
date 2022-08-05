@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="microstyle.css">
+</head>
+<body>
+
+   
+    <div id="container">
+
+        <select id="font-size">
+            <option value="">font-size</option>
+            <option value="15">15px</option>
+            <option value="30">30px</option>
+            <option value="60">60px</option>
+        </select>
+
+        <input type="button" onclick="increase();" value="+" id="increase">
+        <input type="button" onclick="decrease();" value="-" id="decrease"> 
+
+           <select id="font-color">
+                      <option value="">color</option>
+                      <option value="red">red</option>
+                      <option value="green">green</option>
+                      <option value="blue">blue</option>
+                    </select>
+                
+
+        <select id="background-color">
+            <option value="">background</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+
+        <select id="text-transform">
+            <option value="">text-transform</option>
+            <option value="uppercase">uppercase</option>
+            <option value="lowercase">lowercase</option>
+        </select>
+         
+        <select id="text-align">
+            <option value="">text-align</option>
+            <option value="left">left</option>
+            <option value="center">center</option>
+            <option value="right">right</option>
+        </select>
+       
+            <div id="a">
+                   <input type="button" value="B" id="bold"> 
+                   <input type="button" value="I" id="italic">
+                   <input type="button" value="U" id="underline"> 
+            </div>
+ 
+                
+                
+
+         <br><br>
+          <input type="text" id="mytext">
+        
+    </div>
+
+
+    <script>
+
+            
+            
+
+            function increase(){
+                let mytext = document.getElementById("mytext");
+                let hwy = window.getComputedStyle(mytext, null).getPropertyValue('font-size');
+                let newsize = parseFloat(hwy);
+                mytext.style.fontSize = (newsize + 10) + "px";
+            }
+
+            function decrease(){
+                let mytext = document.getElementById("mytext");
+                let hwy = window.getComputedStyle(mytext, null).getPropertyValue('font-size');
+                let newsize = parseFloat(hwy);
+                mytext.style.fontSize = (newsize - 10) + "px";
+            }
+
+            function decrease(){
+                let mytext = document.getElementById("mytext");
+            
+                mytext.style.color = "red";
+            }
+
+
+            
+
+
+            let font_size = document.getElementById("font-size")
+
+            font_size.onclick = () => {
+                if(font_size.value == "15"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.fontSize = "15px";
+             } if(font_size.value == "30"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.fontSize = "30px";} if(font_size.value == "60"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.fontSize = "60px"; }
+            
+            }
+             
+            let bold = document.getElementById("bold")
+
+            bold.onclick =() => {
+                let mytext = document.getElementById("mytext");
+            
+            mytext.style.fontWeight = "bold";
+            }
+
+             let italic = document.getElementById("italic")
+
+            italic.onclick =() => {
+                let mytext = document.getElementById("mytext");
+            
+            mytext.style.fontStyle = "italic";
+            }
+
+             let underline = document.getElementById("underline")
+
+            underline.onclick =() => {
+                let mytext = document.getElementById("mytext");
+            
+            mytext.style.textDecoration = "underline";
+            }
+            
+
+             let font_color = document.getElementById("font-color")
+
+            font_color.onclick = () => {
+                if(font_color.value == "red"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.color = "red";
+             } if(font_color.value == "green"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.color = "green";} if(font_color.value == "blue"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.color = "blue"; }
+            
+            }
+
+
+             let background_color = document.getElementById("background-color")
+
+            background_color.onclick = () => {
+                if(background_color.value == "red"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.backgroundColor = "red";
+             } if(background_color.value == "green"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.backgroundColor = "green";} if(background_color.value == "blue"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.backgroundColor = "blue"; }
+            
+            }
+                    
+            
+             let text_transform = document.getElementById("text-transform")
+
+            text_transform.onclick = () => {
+                if(text_transform.value == "uppercase"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.textTransform = "uppercase";
+             } if(text_transform.value == "lowercase"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.textTransform = "lowercase";} 
+            
+            }
+               
+            
+                         let text_align = document.getElementById("text-align")
+
+            text_align.onclick = () => {
+                if(text_align.value == "left"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.textAlign = "left";
+             } if(text_align.value == "center"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.textAlign = "center";} if(text_align.value == "right"){
+                 let mytext = document.getElementById("mytext");
+                mytext.style.textAlign = "right"; }
+            
+            }
+
+
+    </script>
+    
+</body>
+</html>

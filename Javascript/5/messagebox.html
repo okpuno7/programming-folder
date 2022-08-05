@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box</title>
+</head>
+<body>
+
+    <input type="text" id="message">
+    <div class="screen"></div>
+    <div class="screen" style="background-color: blue;padding:10px;height:auto;width:fit-content;"></div>
+
+    <script>
+        let message = document.getElementById('message');
+
+        message.onkeydown = function(){
+            let screen = document.getElementsByClassName('screen')[0];
+            let showvalue = document.getElementsByClassName('screen')[1];
+
+            screen.innerHTML = message.value.length + 0;
+            showvalue.innerHTML = message.value;
+        }
+
+
+    </script>
+    
+</body>
+</html>

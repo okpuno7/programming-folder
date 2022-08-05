@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Creator</title>
+</head>
+<body>
+
+    <input type="text" class="url_creator">
+    <input type="button" value="Create URL" id="url_btn">
+    <div class="screen"></div>
+
+    <script>
+        let url_btn = document.getElementById('url_btn');
+
+        url_btn.onclick = function(){
+            let url_creator = document.getElementsByClassName('url_creator')[0];
+
+            if(url_creator.value == ""){
+                alert("shoud not be empty")
+            }else{
+                let screen = document.getElementsByClassName('screen')[0];
+                screen.innerHTML = "https://"+url_creator.value+".com <br> " + "https://"+url_creator.value+".net <br> " ;
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

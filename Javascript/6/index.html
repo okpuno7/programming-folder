@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    
+
+        <script>
+            let date = new Date();
+            let hour = date.getHours(); //Get the hour of the day
+            let minute = date.getMinutes(); //Get the Minute
+            let fullyear = date.getFullYear(); //Get the year
+            let day_in_month = date.getDate(); //Get the day of the month
+            let month = date.getMonth(); //Get the month using index method
+            let date_week = date.getDay() //Day of the week using index method
+            let another = date.getTime()
+            document.write(hour + ":" + minute + "<br>");
+            document.write(fullyear + "<br>" )
+            document.write(day_in_month + "<br>")
+            document.write(month + 1 + "<br>")
+            document.write(date_week + "<br>")
+            // document.write(another/(60*1000*60*24) + "<br>")
+
+
+
+            if(hour <= 11 && minute <=59){
+                document.write("Good morning");
+            }else if(hour > 11 && hour <= 16){
+                document.write("Good afternoon");
+            }else if(hour > 16 && hour <=19){
+                document.write("Good Evening");
+            }else if(hour >19 && hour <=24){
+                document.write("It's night");
+            }
+
+        </script>
+
+
+</body>
+</html>

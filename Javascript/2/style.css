@@ -1,0 +1,22 @@
+
+#display1, #display2{
+    height: 200px;                  
+    width: 200px;
+    
+}
+#display1{
+    background-color: blue;
+    
+}
+
+#display2{
+    
+    background-color: red;
+}
+
+#veiw{
+    height: 250px;
+    width: 250px;
+    background: rgba(131, 114, 19, 0.674);
+    display: none;
+}

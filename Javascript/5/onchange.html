@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    
+
+        <select id="country">
+            <option value="">Select......</option>
+            <option value="Ghana">Ghana</option>
+            <option value="US">US</option>
+            <option value="Nigeria">Nigeria</option>
+        </select>
+
+        <select id="us_states">
+            <option value="">Select......</option>
+            <option value="Us State 1">Us State 1</option>
+            <option value="Us State 2">Us State 2</option>
+            <option value="Us State 3">Us State 3</option>
+
+        </select>
+
+
+            <select id="Nigeria_states">
+                <option value="">Select......</option>
+                <option value="Nigeria State 1">Edo</option>
+                <option value="Nigeria State 2">Rivers</option>
+                <option value="Nigeria State 3">Delta</option>
+
+            </select>
+
+                <select id="Ghana_states">
+                    <option value="">Select......</option>
+                    <option value="Ghana State 1">Accra</option>
+                    <option value="Ghana State 2">Uwase</option>
+                    <option value="Ghana State 3">Charlie</option>
+
+                </select>
+        </select>
+
+
+        <script>
+            let country = document.getElementById("country");
+
+            country.onclick = ()=>{
+                if(country.value == "Ghana"){
+                    let Ghana_states = document.getElementById('Ghana_states');
+                    Ghana_states.style.display = "block";
+                    us_states.style.display = "none";
+                    Nigeria_states.style.display = "none";
+                    
+                }
+                if(country.value == "US"){
+                    let us_states = document.getElementById('us_states');
+                    us_states.style.display = "block";
+                    Ghana_states.style.display = "none";
+                    Nigeria_states.style.display = "none";
+                }
+                if(country.value == "Nigeria"){
+                    let Nigeria_states = document.getElementById('Nigeria_states');
+                    Nigeria_states.style.display = "block";
+                    us_states.style.display = "none";
+                    Ghana_states.style.display = "none";
+                }
+            }
+        </script>
+
+
+</body>
+</html>

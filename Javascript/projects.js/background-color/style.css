@@ -1,0 +1,25 @@
+ .nav-center, ul{
+    display: flex;
+    margin-left: 200px;
+
+}
+
+ul li  {
+    display: inline;
+   
+}
+li , a{
+ text-decoration: none;
+ color: #FF5733;
+ 
+}
+ a ,.he{
+    padding-left: 20px;
+ }
+
+ .container{
+    text-align: center;
+ }
+  a{
+    text-align: center;
+ }
